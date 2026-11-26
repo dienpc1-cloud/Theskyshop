@@ -119,6 +119,7 @@ footer .logo img{height:120px}
 .hero h1{font:800 clamp(38px,5.2vw,60px)/1.02 var(--fd);letter-spacing:-.025em;text-wrap:balance}
 .herologo{margin:0 0 24px}
 .herologo img{display:block;width:min(55%,220px);height:auto;margin:0 auto}
+@media(min-width:861px){.herologo img{width:min(80%,320px)}}
 .hero p.lead{color:#C9C6D3;font-size:18px;margin:16px 0 28px;max-width:34em}
 .hero .search{max-width:none}
 .hero .search label{height:56px}
@@ -585,6 +586,14 @@ dialog::backdrop{background:rgb(14 12 20/.55)}
 
  <section class="band">
   <div class="wrap">
+   <div class="sechead"><div><h2 class="h2" data-i18n="newIn">Net binnen</h2><p class="sub" data-i18n="newInSub">De nieuwste figuren in de shop.</p></div>
+    <div class="arrows"><button class="abtn" data-scroll="-1" aria-label="Vorige"><svg class="ico"><use href="#i-left"/></svg></button><button class="abtn" data-scroll="1" aria-label="Volgende"><svg class="ico"><use href="#i-right"/></svg></button></div></div>
+   <div class="scroller" id="newin" tabindex="0"></div>
+  </div>
+ </section>
+
+ <section class="band">
+  <div class="wrap">
    <div class="sechead"><div><h2 class="h2" data-i18n="byGame">Shop per game</h2><p class="sub" data-i18n="byGameSub">Van de eerste portal tot de laatste. Kies een game en zie direct wat er op voorraad is.</p></div><a class="more" href="#shop" data-i18n="allFigures">Alle figuren →</a></div>
    <div class="timeline" id="timeline"></div>
   </div>
@@ -597,13 +606,6 @@ dialog::backdrop{background:rgb(14 12 20/.55)}
   </div>
  </section>
 
- <section class="band">
-  <div class="wrap">
-   <div class="sechead"><div><h2 class="h2" data-i18n="newIn">Net binnen</h2><p class="sub" data-i18n="newInSub">De nieuwste figuren in de shop.</p></div>
-    <div class="arrows"><button class="abtn" data-scroll="-1" aria-label="Vorige"><svg class="ico"><use href="#i-left"/></svg></button><button class="abtn" data-scroll="1" aria-label="Volgende"><svg class="ico"><use href="#i-right"/></svg></button></div></div>
-   <div class="scroller" id="newin" tabindex="0"></div>
-  </div>
- </section>
 
  <section class="band" style="padding-top:0">
   <div class="wrap split">
